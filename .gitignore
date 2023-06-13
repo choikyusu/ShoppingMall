@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# build product
+/dist
+
 # production
 /build
 
