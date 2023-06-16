@@ -3,11 +3,11 @@ import { AccountMenu, CategoryMenu, MainMenu } from "../../organisms/Menu";
 
 export const Header = () => {
   return (
-    <>
+      <>
       <AccountMenu />
       <MainMenu />
       <CategoryMenu />
-    </>
+      </>
   );
 };
 
