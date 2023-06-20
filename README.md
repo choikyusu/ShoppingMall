@@ -1,3 +1,18 @@
+# Summary
+
+1. 개발 환경  
+   **Frontend**  
+    React, Next.js, Typescript  
+   **Backend**  
+    Node.js, Typescript, MongoDB  
+
+3. Sample Demo  
+   https://www.alittlevanilla.kro.kr/
+
+   
+
+# About Next.js
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
