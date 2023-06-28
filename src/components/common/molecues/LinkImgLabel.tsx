@@ -1,26 +1,32 @@
 import {styled} from "styled-components";
 
 export const LinkImgLabel = ({
-  buttonName,
   linkURL, imgPath,
+   buttonName,
+   // afterEvent
 }: {
   imgPath: string;
-  buttonName?: string;
-  linkURL?: string;
+  linkURL: string;
+        buttonName?: string;
+  // afterEvent? : function;
 }) => {
   return (
       <Styled.LinkWrapper href={linkURL}>
-      <img src={imgPath} alt="이미지"/>
+      <Styled.Img src={imgPath} alt="이미지"/>
         {buttonName}
       </Styled.LinkWrapper>
   );
 };
 
 const Styled = {
-  Link: styled.a`
+  LinkWrapper: styled.a`
     display: inline-block;
-    vertical-align: middle;
-    padding: 0px 13.5px;
-    font-size: 11px;
+    // vertical-align: middle;
+    // padding: 0px 13.5px;
+    // font-size: 11px;
+    size:1em;
   `,
+    Img: styled.img`
+    object-fit : cover; // IE 에서 지원 X
+    `
 };

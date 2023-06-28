@@ -12,5 +12,7 @@ export const Header = () => {
 };
 
 const Styled = {
-  Header: styled.header``,
+  Header: styled.header`
+  // height:200px;
+  `,
 };
