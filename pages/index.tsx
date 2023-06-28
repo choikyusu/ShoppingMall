@@ -1,7 +1,7 @@
-import Footer from "@/src/components/common/organisms/Footer";
-import Main from "@/src/components/common/organisms/Main";
-import { Header } from "@/src/components/common/template/Header/Header";
 import { styled } from "styled-components";
+import { Header } from "../src/components/common/template/Header/Header";
+import Main from "../src/components/common/organisms/Main";
+import Footer from "../src/components/common/organisms/Footer";
 
 const Home = () => {
   return (
