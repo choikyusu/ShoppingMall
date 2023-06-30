@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import Search from "../../atoms/Search";
 
-const MainMenu = () => {
+const AccountMenu = () => {
   return (
     <Styled.Header>
       <Search />
@@ -13,4 +13,4 @@ const Styled = {
   Header: styled.header``,
 };
 
-export default MainMenu;
+export default AccountMenu;
