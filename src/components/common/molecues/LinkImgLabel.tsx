@@ -1,32 +1,34 @@
-import {styled} from "styled-components";
+import { styled } from 'styled-components';
 
 export const LinkImgLabel = ({
-  linkURL, imgPath,
-   buttonName,
-   // afterEvent
-}: {
-  imgPath: string;
+  linkURL,
+  imgPath,
+  imgSvg,
+  buttonName,
+}: // afterEvent
+{
   linkURL: string;
-        buttonName?: string;
-  // afterEvent? : function;
+  buttonName: string;
+  imgPath?: string;
+  imgSvg?: JSX.Element;
 }) => {
   return (
-      <Styled.LinkWrapper href={linkURL}>
-      <Styled.Img src={imgPath} alt="이미지"/>
-        {buttonName}
-      </Styled.LinkWrapper>
+    <Styled.LinkWrapper href={linkURL}>
+      {imgSvg || null}
+      {imgPath ? <Styled.Img src={imgPath} alt="이미지" /> : null}
+      {buttonName}
+    </Styled.LinkWrapper>
   );
 };
 
 const Styled = {
   LinkWrapper: styled.a`
-    display: inline-block;
-    // vertical-align: middle;
-    // padding: 0px 13.5px;
-    // font-size: 11px;
-    size:1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // size:1em;
   `,
-    Img: styled.img`
-    object-fit : cover; // IE 에서 지원 X
-    `
+  Img: styled.img`
+    object-fit: cover; // IE 에서 지원 X
+  `,
 };
