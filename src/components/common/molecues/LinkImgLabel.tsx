@@ -8,7 +8,7 @@ export const LinkImgLabel = ({
 }: // afterEvent
 {
   linkURL: string;
-  buttonName: string;
+  buttonName?: string;
   imgPath?: string;
   imgSvg?: JSX.Element;
 }) => {
@@ -16,7 +16,7 @@ export const LinkImgLabel = ({
     <Styled.LinkWrapper href={linkURL}>
       {imgSvg || null}
       {imgPath ? <Styled.Img src={imgPath} alt="이미지" /> : null}
-      {buttonName}
+      {buttonName ||null}
     </Styled.LinkWrapper>
   );
 };

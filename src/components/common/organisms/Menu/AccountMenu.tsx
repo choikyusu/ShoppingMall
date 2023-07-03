@@ -3,7 +3,7 @@ import { LinkImgLabel } from '../../molecues/LinkImgLabel';
 
 const AccountMenu = () => {
   return (
-    <Styled.Wrapper>
+    <Styled.HeaderWrapper>
       <Styled.Header>
         <div>
           <LinkImgLabel
@@ -26,12 +26,12 @@ const AccountMenu = () => {
           />
         </Styled.Setting>
       </Styled.Header>
-    </Styled.Wrapper>
+    </Styled.HeaderWrapper>
   );
 };
 
 const Styled = {
-  Wrapper: styled.div`
+  HeaderWrapper: styled.div`
     padding-left: 150px;
     padding-right: 150px;
   `,

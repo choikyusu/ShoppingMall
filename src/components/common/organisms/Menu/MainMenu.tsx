@@ -6,7 +6,7 @@ import { VscAccount } from 'react-icons/vsc';
 
 const MainMenu = () => {
   return (
-    <Styled.Wrapper>
+    <Styled.HeaderWrapper>
       <Styled.Header>
         <LinkImgLabel linkURL="https://www.google.com/" imgPath="Logo.png" />
         <div>상품</div>
@@ -24,12 +24,12 @@ const MainMenu = () => {
           buttonName="장바구니"
         />
       </Styled.Header>
-    </Styled.Wrapper>
+    </Styled.HeaderWrapper>
   );
 };
 
 const Styled = {
-  Wrapper: styled.div`
+  HeaderWrapper: styled.div`
     padding-left: 150px;
     padding-right: 150px;
   `,
