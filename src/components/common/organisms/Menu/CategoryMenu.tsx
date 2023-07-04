@@ -3,14 +3,26 @@ import Search from "../../atoms/Search";
 
 const CategoryMenu = () => {
   return (
-    <Styled.Header>
-      <Search />
-    </Styled.Header>
+    <Styled.HeaderWrapper>
+        <Styled.Header>
+      <div>카테고리
+      </div>
+        <div>홈
+        </div>
+        </Styled.Header>
+    </Styled.HeaderWrapper>
   );
 };
 
 const Styled = {
-  Header: styled.header``,
+    HeaderWrapper: styled.div`
+    padding-left: 150px;
+    padding-right: 150px;
+  `,
+    Header: styled.header`
+    display: flex;
+    justify-content: center;
+  `,
 };
 
 export default CategoryMenu;
