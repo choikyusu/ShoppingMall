@@ -1,19 +1,19 @@
-import { styled } from "styled-components";
-import Search from "../../atoms/Search";
+import { styled } from 'styled-components';
+import Search from '../../atoms/Search';
 
 const CategoryMenu = () => {
   return (
-    <Styled.Wrapper>
+    <Styled.HeaderWrapper>
       <Styled.Header>
         <div>카테고리</div>
         <div>홈</div>
       </Styled.Header>
-    </Styled.Wrapper>
+    </Styled.HeaderWrapper>
   );
 };
 
 const Styled = {
-  Wrapper: styled.div`
+  HeaderWrapper: styled.div`
     padding-left: 150px;
     padding-right: 150px;
   `,
