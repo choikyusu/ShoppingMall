@@ -38,6 +38,7 @@ const Styled = {
   Header: styled.header`
     display: flex;
     justify-content: space-between;
+    height: 50px;
   `,
   Setting: styled.div`
     display: flex;
