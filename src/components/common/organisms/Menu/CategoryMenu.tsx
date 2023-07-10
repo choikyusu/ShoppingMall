@@ -3,25 +3,24 @@ import Search from "../../atoms/Search";
 
 const CategoryMenu = () => {
   return (
-    <Styled.HeaderWrapper>
-        <Styled.Header>
-      <div>카테고리
-      </div>
-        <div>홈
-        </div>
-        </Styled.Header>
-    </Styled.HeaderWrapper>
+    <Styled.Wrapper>
+      <Styled.Header>
+        <div>카테고리</div>
+        <div>홈</div>
+      </Styled.Header>
+    </Styled.Wrapper>
   );
 };
 
 const Styled = {
-    HeaderWrapper: styled.div`
+  Wrapper: styled.div`
     padding-left: 150px;
     padding-right: 150px;
   `,
-    Header: styled.header`
+  Header: styled.header`
     display: flex;
     justify-content: center;
+    height: 50px;
   `,
 };
 
