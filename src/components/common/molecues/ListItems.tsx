@@ -1,4 +1,8 @@
 import { styled } from 'styled-components';
+import { LinkImgLabel } from './LinkImgLabel';
+import { VscAccount } from 'react-icons/vsc';
+import { BsFlower1 } from 'react-icons/bs';
+
 const productList = [
   {
     id: 1,
@@ -71,7 +75,10 @@ export const ListItems = () => {
       {productList.map(item => (
         <li key={item.id}>
           <Styled.ProductWrapper>
-            <Styled.Img src="ShoppingCart.png" alt="이미지" />
+            <LinkImgLabel
+              linkURL="https://www.naver.com/"
+              imgSvg={<BsFlower1 />}
+            />
             <div>{item.productName}</div>
             <div>{item.price}</div>
             <div>{item.star}</div>
@@ -85,16 +92,20 @@ export const ListItems = () => {
 const Styled = {
   ProductWrapper: styled.div`
     width: 200px;
-    height: 400px;
-    border-radius: 50px;
-    border: black solid 2px;
+    height: 300px;
+    border-radius: 10px;
+    border: black solid 1px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   `,
   Ul: styled.ul`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    padding-inline-start: 0px;
   `,
   Img: styled.img`
     width: 200px;
+    // object-fit: cover;
   `,
 };

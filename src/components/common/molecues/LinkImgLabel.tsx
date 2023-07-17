@@ -17,7 +17,6 @@ export const LinkImgLabel = ({
       {imgSvg || null}
       {imgPath ? <Styled.Img src={imgPath} alt="이미지" /> : null}
       {buttonName || null}
-      {buttonName ||null}
     </Styled.LinkWrapper>
   );
 };
