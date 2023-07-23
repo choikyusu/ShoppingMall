@@ -5,17 +5,28 @@ export const LinkImgLabel = ({
   imgPath,
   imgSvg,
   buttonName,
+  imgWidth,
+  imgHeight,
 }: // afterEvent
 {
   linkURL: string;
   buttonName?: string;
   imgPath?: string;
   imgSvg?: JSX.Element;
+  imgWidth?: string;
+  imgHeight?: string;
 }) => {
   return (
     <Styled.LinkWrapper href={linkURL}>
       {imgSvg || null}
-      {imgPath ? <Styled.Img src={imgPath} alt="이미지" /> : null}
+      {imgPath ? (
+        <Styled.Img
+          src={imgPath}
+          alt="이미지"
+          width={imgWidth}
+          height={imgHeight}
+        />
+      ) : null}
       {buttonName || null}
     </Styled.LinkWrapper>
   );
