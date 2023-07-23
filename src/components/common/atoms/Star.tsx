@@ -5,11 +5,9 @@ import { AiOutlineStar } from 'react-icons/Ai';
 export const Star = ({
   starNum,
   color,
-  size,
 }: {
   starNum: number;
   color?: string;
-  size?: string;
 }) => {
   return (
     <>
