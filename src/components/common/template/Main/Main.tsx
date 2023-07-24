@@ -1,18 +1,18 @@
 import { styled } from 'styled-components';
+import CoverImage from '../../molecues/CoverImage';
+import ProductBanner from '../../organisms/ProductBanner';
 
 const Main = () => {
   return (
     <Styled.MainWrapper>
-      <Styled.Img src="HomeImg.png" alt="이미지" />
+      <CoverImage />
+      <ProductBanner />
     </Styled.MainWrapper>
   );
 };
 
 const Styled = {
   MainWrapper: styled.main``,
-  Img: styled.img`
-    object-fit: cover; // IE 에서 지원 X
-  `,
 };
 
 export default Main;
