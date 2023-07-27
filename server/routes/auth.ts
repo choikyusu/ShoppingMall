@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import * as express from "express";
-import db from "../index";
+import {db,User} from "../index";
 import {trueTag} from "yaml/dist/schema/yaml-1.1/bool";
 
 const router = express.Router();
@@ -28,10 +28,11 @@ router.post("/signup", async (req, res) => {
     const sql = "insert into user(userId, userPass, userName) values (?,?,?)";
     const valuse = [userId,password,userName]
     db.query(sql,valuse);
-    res.status(404).json({msg : '가입성공'});
+
+        res.json({msg : '가입성공'});
     }
     catch (e) {
-        res.json({msg : '가입실패'});
+        res.status(404).json({msg : '가입실패'});
     }
 });
 

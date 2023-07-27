@@ -10,6 +10,14 @@ const port = 3000;
 const app = next({ dev, port });
 
 const handle = app.getRequestHandler();
+
+interface User{
+  userId: String;
+  userPass: String;
+  userName: String;
+}
+
+
 const mysql = require('mysql');
 const db = mysql.createConnection({
   host: 'localhost',
@@ -37,4 +45,4 @@ app.prepare().then(() => {
   });
 });
 
-export default db;
+export {db,User};

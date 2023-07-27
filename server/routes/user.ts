@@ -1,12 +1,12 @@
 import express from "express";
-import db from "../index";
+import {db,User} from "../index";
 const router = express.Router();
 
-interface User{
-  userId: String;
-  userPass: String;
-  userName: String;
-}
+// interface User{
+//   userId: String;
+//   userPass: String;
+//   userName: String;
+// }
 
 
 router.route("/").get((req, res, next) => {
