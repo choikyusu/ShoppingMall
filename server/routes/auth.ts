@@ -13,7 +13,6 @@ router.post("/signup", async (req, res) => {
   let userId = req.body.userId;
   let password = req.body.password;
   let userName = req.body.name;
-  console.log(userId, password, userName );
 
  // password 암호화
  function passwordSha256(password : String) {
@@ -23,13 +22,11 @@ router.post("/signup", async (req, res) => {
 
  password = passwordSha256(password);
 
- console.log(password)
  // db에 저장
     try{
     const sql = "insert into user(userId, userPass, userName) values (?,?,?)";
     const valuse = [userId,password,userName]
     db.query(sql,valuse);
-
         res.json({msg : '가입성공'});
     }
     catch (e) {
