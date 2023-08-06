@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import * as express from "express";
-import {db,User} from "../index";
+import db from "../index";
+import {User} from "../index";
 import {trueTag} from "yaml/dist/schema/yaml-1.1/bool";
 
 const router = express.Router();

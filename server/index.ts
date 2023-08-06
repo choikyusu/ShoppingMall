@@ -11,7 +11,7 @@ const app = next({ dev, port });
 
 const handle = app.getRequestHandler();
 
-interface User{
+type User = {
   userId: String;
   userPass: String;
   userName: String;
@@ -45,4 +45,5 @@ app.prepare().then(() => {
   });
 });
 
-export {db,User};
+export default  db;
+export type {User};
