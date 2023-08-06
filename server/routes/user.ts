@@ -1,5 +1,6 @@
 import express from "express";
-import {db,User} from "../index";
+import db from "../index";
+import {User} from "../index";
 const router = express.Router();
 
 // interface User{
