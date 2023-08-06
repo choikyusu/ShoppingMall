@@ -4,6 +4,7 @@ import userRouter from './routes/user';
 import authRouter from './routes/auth';
 import loginRouter from './routes/login';
 import router from "./routes/user";
+import crypto from "crypto";
 
 const dev = process.env.NODE_ENV !== 'production';
 const port = 3000;
@@ -12,11 +13,10 @@ const app = next({ dev, port });
 const handle = app.getRequestHandler();
 
 type User = {
-  userId: String;
-  userPass: String;
-  userName: String;
+  userId: "";
+  userPass: "";
+  userName: "";
 }
-
 
 const mysql = require('mysql');
 const db = mysql.createConnection({

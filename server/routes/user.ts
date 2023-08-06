@@ -12,7 +12,8 @@ const router = express.Router();
 
 router.route("/").get((req, res, next) => {
 
-  db.query('select * from shoppingMall.`user`',(error : String, result : User[])=>{
+  const sql = 'select * from shoppingMall.`user`'
+  db.query(sql,(error : String, result : User[])=>{
     if(error){
       console.log("에러")
     }
